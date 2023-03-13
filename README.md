@@ -7,7 +7,7 @@
 </div>
  
 ### Ideia do Projeto 
-- Criar um website sobre a serie invincible.
+- Criar um website responsivo sobre a serie invincible.
 
 ### Site:
 - 
@@ -17,3 +17,5 @@
 - `CSS`
 - `JavaScrip`
 - `Figma`
+
+

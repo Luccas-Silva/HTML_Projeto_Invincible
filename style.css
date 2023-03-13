@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 128rem;
+    margin: 0 auto;
+    font-size: 2rem;   
+}
+
+main::after{
+    content: '';
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.75) 10%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0.75) 90%);
+    z-index: -1;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+
+.informacoes{
+    margin-left: 5%;
+}
+
+.informacoes .logo{
+    max-width: 40rem;
+    margin-bottom: 5rem;
+}
+
+.informacoes .descricao{
+    width: 50%;
+    color: #ffffff;
+    line-height: 3rem;
+}
+
+.btn-carrossel{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn-carrossel .botao{
+    background-color: #ffffff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid transparent;
+    cursor: pointer;
+    border-color: #000000;
+}
+
+.btn-carrossel .botao.selecionado{
+    background-color: #fff200;
+    transform: scale(1.35);
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.menu .icon{
+    width: 4rem;
+    margin: 1rem 0;
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+}
+
+.menu .icon:hover{
+    transform: scale(1.3);
+}
+
+.carrosel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.carrosel .imagem{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    animation: mudarImagem 0.7s;
+}
+
+.carrosel .imagem.ativa{
+    display: block;
+}
+
+@keyframes mudarImagem{
+    from{
+        opacity: 0.85;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1280px){
+    body{
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 768px){
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacoes .descricao{
+        width: 60%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px){
+
+    body{
+        padding: 4rem;
+    }
+
+    .informacoes .logo{
+        max-width: 30rem;
+    }
+
+    .informacoes .descricao{
+        width: 100%;
+    }
+
+    .menu{
+        position: static;
+        min-height: auto;
+        width: 100%;
+        margin-top: 2.5rem;
+        
+    }
+
+    .menu ul{
+        flex-direction: row;
+    }
+
+    .menu .icon{
+        width: 5rem;  
+        margin: 0 1.5rem;
+    }
+
+    .conteudo{
+        min-height: 70vh;
+        gap: 5rem;
+    }
+}

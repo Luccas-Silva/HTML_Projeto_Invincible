@@ -18,4 +18,5 @@
 - `JavaScrip`
 - `Figma`
 
-
+## Design do Site
+![image](https://user-images.githubusercontent.com/89430801/224588602-aa9a9fee-0a99-4952-a170-c4bd8569b6fe.svg)

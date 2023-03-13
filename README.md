@@ -7,7 +7,7 @@
 </div>
  
 ### Ideia do Projeto 
-- 
+- Criar um website sobre a serie invincible.
 
 ### Site:
 - 

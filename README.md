@@ -10,7 +10,7 @@
 - Criar um website responsivo sobre a serie invincible.
 
 ### Site:
-- 
+- https://luccas-silva-invincible.netlify.app/
 
 ## Tecnologias usadas
 - `HTML`

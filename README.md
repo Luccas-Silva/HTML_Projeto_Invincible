@@ -7,10 +7,7 @@
 </div>
  
 ### Ideia do Projeto 
-- Criar um website responsivo sobre a serie invincible.
-
-### Site:
-- https://luccas-silva-invincible.netlify.app/
+- Criar um website responsivo e informativo sobre a série Invincible, oferecendo uma experiência de usuário otimizada em diversos dispositivos.
 
 ## Tecnologias usadas
 - `HTML`
